@@ -1,0 +1,173 @@
+*{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.g1{
+    margin-top: -3em;
+    color: white;
+}
+.g2{
+    color: white;
+}
+.table_1{
+    background-color: #123EAB;
+    width: 1000px;
+    text-align: center;
+    color: white;
+    margin-left: 13em;
+}
+.pod{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    text-align: center;
+    width:1000px;
+    height: 20px;
+    margin-left: 13em;
+    background-color: #886ED7;
+    
+}
+
+h3, h2{
+    position: relative;
+    margin: 0;
+}
+.main{
+    position: relative;
+    font-size: 300px;
+    margin-left: 140px;
+    height: 600px;
+}
+.table_2{
+    width: 1000px;
+    background-color: #06246F;
+    margin-left: 13em;
+}
+.dropbtns {
+    background-color: #886ED7;
+    color: rgb(70, 66, 179);
+    padding: 19px;
+    font-size: 12px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtns:hover, .dropbtns:focus {
+    background-color: #210672;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdowns {
+   
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents a:hover {background-color: #ddd}
+
+
+.shows {display:block;}
+
+/*2 spisok */
+
+
+.dropbtn2 {
+    background-color: #886ED7;
+    color: rgb(70, 66, 179);
+    padding: 16px;
+    font-size: 12px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    position: relative;  
+}
+  
+  /* Кнопка выпадающего меню при наведении и фокусировке */
+  .dropbtn2:hover, .dropbtn2:focus {
+    background-color: #210672;
+  }
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 270px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 12px;
+
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content2 a:hover {background-color: #ddd}
+  
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+  .show {display:block;}
+
+  /* фон страниц */
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(26, 28, 25) 50%, rgb(52, 52, 53) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }

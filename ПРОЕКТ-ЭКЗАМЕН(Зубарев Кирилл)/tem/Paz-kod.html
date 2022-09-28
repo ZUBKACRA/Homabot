@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" content="a">
+        <title>Проект</title>
+        <link rel="stylesheet" href="../ПРОЕКТ(Зубарев Кирилл)/css/style2.css">
+    </head>
+    <body bgcolor="rgb(141, 135, 135)">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+        <table cellspacing="0" cellpadding="" class="table_1">
+            <tr>
+                <td colspan="5" height="60" bgcolor="#466FD5">
+                    <h3>ГБПОУ "Пермский политехнический колледж имени Н.Г.Славянова"</h3>
+                    <h2>Информатика</h2>
+                </td>
+            </tr>
+            <tr height="70" class="tr2">
+                <td width="80"><img src="../ПРОЕКТ(Зубарев Кирилл)/img/logo.svg" alt="" width="80"></td>
+                <td colspan='3'>
+                    <div class="dropdowns">
+                        <button onclick="myFunctions()" class="dropbtns">МЕНЮ</button>
+                        <div id="myDropdowns" class="dropdown-contents">
+                          <a href="../index.html">Главная</a>
+                          <a href="../main/Map.html">Карта сайта</a>
+                          <a href="../main/cl-chem.html">Цветовая схема</a>
+                          <a href="../ПРОЕКТ(Зубарев Кирилл)/kros.xlsx">Кроссворд</a>
+                          <a href="../main/Test.html">Тест</a>
+                          <a href="../main/Glos.html">Глоссарий</a>
+                          <a href="../main/Valid.html">Валидность</a>
+                          <a href="../end/Author.html">Автор</a>
+                          
+                        </div>
+                      </div>
+                      
+                </td>
+                <td width="80"><img src="../ПРОЕКТ(Зубарев Кирилл)/img/logo_theme.png" alt="" width="80"></td>
+            </tr>
+            <table class="table_2" cellspacing="0" cellpadding="">
+                <tr height="590">
+                    <td width="180" align="center" valign="top">
+                        <div class="dropdown2">
+                            <button onclick="myFunction()" class="dropbtn2"> ТЕМАТИЧЕСКОЕ МЕНЮ</button>
+                            <div id="myDropdown2" class="dropdown-content2">
+                              <a href="Inform.html">Понятие информации и ее виды</a> 
+                              <a href="../tem/Inform-obj.html">Информация и объекты</a>
+                              <a href="../tem/Vid-inform.html">Виды информации</a>
+                              <a href="../tem/Per-inform.html">Передача информации</a>
+                              <a href="../tem/cv-inform.html">Свойства информации</a>
+                              <a href="../tem/Soc-inform.html">Социальная информация</a>
+                              <a href="../tem/Har-inform.html">Характеристики информации</a>
+                              <a href="../tem/Izm-inform.html">Измерение информации</a>
+                              <a href="../tem/Kod-inform.html">Кодирование информации</a>
+                              <a href="../tem/Shest-inform.html">Шестнадцатеричная система</a>
+                              <a href="Paz-kod.html">Разные кодировки</a>
+                              <a href="../tem/Nac-kod.html">Национальные кодировки</a>
+                              <a href="../tem/Macintosh.html">Кириллица Macintosh</a>
+                              <a href="../tem/Euro-val.html">Символ евро-валюты</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><h2 align="center" class="g3">Разные кодировки</h2><br><p class="g2">КОИ-7 (Код Обмена Информацией семибитный – рисунок 1.3), в которой присутствовали прописные латинские буквы, а на месте строчных латинских были русские прописные буквы (кириллица). <br>
+                        <img src="../ПРОЕКТ(Зубарев Кирилл)/img/1.3.jpg.png" alt=""><br>
+                        Рисунок 1.3. 7-битная таблица символов КОИ-7
+                        Позднее на первых отечественных персональных компьютерах использовалась так называемая «Основная кодировка ВЦ Академии Наук СССР», в руководствах к старым матричным принтерам обозначаемая просто как «ГОСТ» – 8-битная кодовая таблица, вторая половина которой содержала символы псевдографики, русские прописные и строчные буквы (коды с 128 по 255 – рисунок 1.4).
+                        <img src="../ПРОЕКТ(Зубарев Кирилл)/img/1.4.jpg.png" alt="">
+                        Рисунок 1.4. Кодировка символов «ГОСТ» (коды с 12810 по 25510)
+                        В дальнейшем основной кодировкой русских букв для первой операционной системы ПК – MS DOS стала «Альтернативная кодировка ВЦ Академии Наук СССР» (вторая половина таблицы для кодов 128-255 приведена на рисунке 1.5). Содержит псевдографику (позволяющую в текстовом режиме рисовать рамки из одинарных и двойных линий). Существует несколько модификаций, отличающихся символами в последних 14 позициях. Зарегистрирована в IANA (Internet Assigned Numbers Authority – организация, отвечающая за административное управление в Internet) как IBM866 или CP866.
+
+                    </p></td>
+                </tr>
+            </table>
+            <table cellspacing="0" class="pod">
+                <td >
+                    <footer>
+                    <a href="../index.html" style="text-decoration: none;">Главная</a> &nbsp; <a href="../main/Autor.html" style="text-decoration: none;">Автор</a>
+                    </footer>
+                </td>
+            </table>
+        </table>
+    <script>
+        function myFunctions() {
+    document.getElementById("myDropdowns").classList.toggle("shows");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contents");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('shows')) {
+        openDropdown.classList.remove('shows');
+      }
+    }
+  }
+}
+function myFunction() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    
+    </body>
+</html>
